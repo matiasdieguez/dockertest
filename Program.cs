@@ -2,6 +2,7 @@
 Console.WriteLine("Hello, World!");
 
 var dbContext = new DockerTestDbContext();
+
 dbContext.Dummies.Add(new Dummy { Name = Guid.NewGuid().ToString() });
 dbContext.SaveChanges();
 

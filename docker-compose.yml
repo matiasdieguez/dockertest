@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  dockertestdb:
+    image: gvenzl/oracle-xe
+    environment:
+      ORACLE_PASSWORD: Tecnocode2022$$
+    ports:
+      - 1521:1521
+  dockertestconsole:
+    image: dockertestconsole
+    build:
+      context: .
+      dockerfile: Dockerfile
