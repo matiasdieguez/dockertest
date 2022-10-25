@@ -7,7 +7,7 @@ public class DockerTestDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseOracle(@"Data Source=localhost:1521/XE;User Id=C##DOCKERTEST;Password=Tecnocode2022$");
+        optionsBuilder.UseOracle(@"Data Source=192.168.0.84:1521/XE;User Id=C##DOCKERTEST;Password=Tecnocode2022$");
     }
 }
 
